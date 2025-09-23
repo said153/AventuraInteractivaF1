@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema nocturno -->
+    <style name="Theme.F1Tracker" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/f1_red</item>
+        <item name="colorPrimaryVariant">@color/f1_black</item>
+        <item name="colorOnPrimary">@color/f1_white</item>
+        <item name="colorSecondary">@color/f1_silver</item>
+        <item name="colorSecondaryVariant">@color/f1_black</item>
+        <item name="colorOnSecondary">@color/f1_white</item>
+        <item name="android:colorBackground">@color/f1_black</item>
+        <item name="colorSurface">@color/main_bg_start</item>
+        <item name="colorOnBackground">@color/f1_white</item>
+        <item name="colorOnSurface">@color/f1_white</item>
+        <item name="actionBarStyle">@style/F1ActionBarStyle</item>
+        <item name="android:statusBarColor">@color/f1_black</item>
+        <item name="android:navigationBarColor">@color/f1_black</item>
+    </style>
+</resources>

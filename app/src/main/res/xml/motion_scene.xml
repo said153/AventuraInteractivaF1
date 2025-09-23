@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!-- Transición para la pantalla principal -->
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000">
+
+        <KeyFrameSet>
+            <!-- Animación del título -->
+            <KeyAttribute
+                motion:motionTarget="@+id/textViewMainTitle"
+                motion:framePosition="50"
+                android:alpha="0.5"
+                android:rotation="5" />
+        </KeyFrameSet>
+
+        <!-- Trigger para iniciar automáticamente -->
+        <OnClick
+            motion:targetId="@+id/textViewMainTitle"
+            motion:clickAction="toggle" />
+    </Transition>
+
+    <!-- Estado inicial -->
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/textViewMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:alpha="1.0"
+            android:scaleX="1.0"
+            android:scaleY="1.0" />
+    </ConstraintSet>
+
+    <!-- Estado final -->
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/textViewMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:alpha="1.0"
+            android:scaleX="1.2"
+            android:scaleY="1.2" />
+    </ConstraintSet>
+
+</MotionScene>

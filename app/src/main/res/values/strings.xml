@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">F1 Aventura Interactiva</string>
+
+    <!-- Títulos principales -->
+    <string name="main_title">🏎️ Fórmula 1 2026</string>
+    <string name="select_team">Selecciona tu Escudería</string>
+    <string name="team_car">Auto del Equipo</string>
+    <string name="team_drivers">Pilotos del Equipo</string>
+
+    <!-- Textos de interacción -->
+    <string name="tap_car_hint">👆 Toca el auto para ver los pilotos</string>
+    <string name="select_driver_hint">Selecciona un piloto para ver detalles</string>
+
+    <!-- Labels -->
+    <string name="team_label">Equipo:</string>
+    <string name="country_label">País:</string>
+    <string name="year_label">Año:</string>
+    <string name="number_label">Número:</string>
+    <string name="nationality_label">Nacionalidad:</string>
+    <string name="age_label">Edad:</string>
+
+    <!-- Mensajes -->
+    <string name="loading">Cargando...</string>
+    <string name="error_loading">Error al cargar datos</string>
+
+    <!-- Escuderías -->
+    <string name="mercedes">Mercedes</string>
+    <string name="red_bull">Red Bull Racing</string>
+    <string name="ferrari">Ferrari</string>
+    <string name="mclaren">McLaren</string>
+    <string name="alpine">Alpine</string>
+    <string name="aston_martin">Aston Martin</string>
+    <string name="williams">Williams</string>
+    <string name="alfa_romeo">Alfa Romeo</string>
+    <string name="haas">Haas</string>
+    <string name="alphatauri">AlphaTauri</string>
+    <string name="kick_sauber">Kick Sauber</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewPiloto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/card_driver_bg"
+    app:strokeWidth="0dp"
+    app:strokeColor="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Foto del piloto -->
+        <ImageView
+            android:id="@+id/imageViewPiloto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_circle_white"
+            android:padding="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Información del piloto -->
+        <TextView
+            android:id="@+id/textViewNombrePiloto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Lewis Hamilton"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textViewNumero"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPiloto"
+            app:layout_constraintTop_toTopOf="@+id/imageViewPiloto" />
+
+        <TextView
+            android:id="@+id/textViewNacionalidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="Británica"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:alpha="0.8"
+            android:drawableLeft="@drawable/ic_flag"
+            android:drawablePadding="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewNumero"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPiloto"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNombrePiloto" />
+
+        <TextView
+            android:id="@+id/textViewEdad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="39 años"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:alpha="0.8"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:drawablePadding="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewNumero"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPiloto"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNacionalidad" />
+
+        <!-- Número del piloto -->
+        <TextView
+            android:id="@+id/textViewNumero"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_number_circle"
+            android:gravity="center"
+            android:text="#44"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewPiloto"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewPiloto" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
