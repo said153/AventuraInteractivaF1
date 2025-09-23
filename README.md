@@ -146,3 +146,6 @@ DriversActivity (Pilotos de la escudería)
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/aa6b2206-8f9c-4ade-a03e-16d83693f478" />
 
 
+https://github.com/user-attachments/assets/e088f902-e443-4e8b-8003-46de8e8f8235
+
+
