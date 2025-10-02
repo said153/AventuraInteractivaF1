@@ -3,7 +3,7 @@
     <string name="app_name">F1 Aventura Interactiva</string>
 
     <!-- Títulos principales -->
-    <string name="main_title">🏎️ Fórmula 1 2026</string>
+    <string name="main_title">🏎️ Fórmula 1            </string>
     <string name="select_team">Selecciona tu Escudería</string>
     <string name="team_car">Auto del Equipo</string>
     <string name="team_drivers">Pilotos del Equipo</string>
@@ -36,4 +36,9 @@
     <string name="haas">Haas</string>
     <string name="alphatauri">AlphaTauri</string>
     <string name="kick_sauber">Kick Sauber</string>
+
+    <!-- Tema -->
+    <string name="dark_mode">Modo Oscuro</string>
+    <string name="theme_icon">Icono de tema</string>
+    <string name="light_mode">Modo Claro</string>
 </resources>

@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Tema base de la aplicación -->
+    <!-- Tema base para modo claro -->
     <style name="Theme.F1Tracker" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Colores primarios -->
         <item name="colorPrimary">@color/f1_red</item>
-        <item name="colorPrimaryVariant">@color/f1_black</item>
+        <item name="colorPrimaryVariant">@color/f1_silver</item>
         <item name="colorOnPrimary">@color/f1_white</item>
 
         <!-- Colores secundarios -->
-        <item name="colorSecondary">@color/f1_silver</item>
-        <item name="colorSecondaryVariant">@color/f1_black</item>
-        <item name="colorOnSecondary">@color/f1_black</item>
+        <item name="colorSecondary">@color/f1_black</item>
+        <item name="colorSecondaryVariant">@color/f1_dark_gray</item>
+        <item name="colorOnSecondary">@color/f1_white</item>
 
-        <!-- Colores de fondo -->
-        <item name="android:colorBackground">@color/f1_black</item>
-        <item name="colorSurface">@color/main_bg_start</item>
-        <item name="colorOnBackground">@color/f1_white</item>
-        <item name="colorOnSurface">@color/f1_white</item>
+        <!-- Colores de fondo (modo claro) -->
+        <item name="android:colorBackground">@color/f1_white</item>
+        <item name="colorSurface">@color/f1_light_gray</item>
+        <item name="colorOnBackground">@color/f1_black</item>
+        <item name="colorOnSurface">@color/f1_black</item>
 
-        <!-- Personalización de ActionBar -->
-        <item name="actionBarStyle">@style/F1ActionBarStyle</item>
-        <item name="android:statusBarColor">@color/f1_black</item>
-        <item name="android:navigationBarColor">@color/f1_black</item>
+        <!-- Personalización de ActionBar en modo claro -->
+        <item name="actionBarStyle">@style/F1ActionBarStyle.Light</item>
+        <item name="android:statusBarColor">@color/f1_red</item>
+        <item name="android:navigationBarColor">@color/f1_white</item>
+
+        <!-- Colores de texto -->
+        <item name="android:textColorPrimary">@color/f1_black</item>
+        <item name="android:textColorSecondary">@color/f1_dark_gray</item>
     </style>
 
-    <!-- Estilo personalizado para ActionBar -->
-    <style name="F1ActionBarStyle" parent="Widget.MaterialComponents.ActionBar.Primary">
+    <!-- Estilo personalizado para ActionBar en modo claro -->
+    <style name="F1ActionBarStyle.Light" parent="Widget.MaterialComponents.ActionBar.Primary">
         <item name="android:background">@color/f1_red</item>
-        <item name="titleTextStyle">@style/F1ActionBarTitleStyle</item>
+        <item name="titleTextStyle">@style/F1ActionBarTitleStyle.Light</item>
     </style>
 
-    <!-- Estilo para el título del ActionBar -->
-    <style name="F1ActionBarTitleStyle" parent="TextAppearance.MaterialComponents.Headline6">
+    <!-- Estilo para el título del ActionBar en modo claro -->
+    <style name="F1ActionBarTitleStyle.Light" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:textColor">@color/f1_white</item>
         <item name="android:textStyle">bold</item>
     </style>

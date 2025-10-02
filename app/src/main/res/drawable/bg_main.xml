@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient
-        android:startColor="@color/main_bg_start"
-        android:endColor="@color/main_bg_end"
-        android:angle="135" />
-</shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Este archivo se mantiene para compatibilidad, pero usaremos bg_main_themed -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="135"
+                android:startColor="@color/main_bg_start"
+                android:endColor="@color/main_bg_end"
+                android:type="linear" />
+        </shape>
+    </item>
+</selector>

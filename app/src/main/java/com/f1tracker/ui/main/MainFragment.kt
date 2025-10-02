@@ -62,8 +62,6 @@ class MainFragment : Fragment() {
         viewModel.escuderias.observe(viewLifecycleOwner) { escuderias ->
             adapter.submitList(escuderias)
 
-            // Animación del título cuando se cargan los datos
-            AnimationUtils.zoomIn(binding.textViewTitle, 600)
         }
 
         // Cargar datos

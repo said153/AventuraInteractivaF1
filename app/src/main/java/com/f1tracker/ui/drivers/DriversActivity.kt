@@ -3,8 +3,12 @@ package com.f1tracker.ui.drivers
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import com.f1tracker.R
 import com.f1tracker.databinding.ActivityDriversBinding
 import com.f1tracker.utils.AnimationUtils
+import com.f1tracker.utils.ThemeUtils
+import com.f1tracker.utils.ColorUtils
 
 /**
  * Actividad que muestra los pilotos de la escudería seleccionada
@@ -16,6 +20,9 @@ class DriversActivity : AppCompatActivity() {
     private val viewModel: DriversViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // IMPORTANTE: Aplicar tema ANTES de super.onCreate()
+        ThemeUtils.applyTheme(this)
+
         super.onCreate(savedInstanceState)
         binding = ActivityDriversBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -25,9 +32,42 @@ class DriversActivity : AppCompatActivity() {
         val escuderiaNombre = intent.getStringExtra("escuderia_nombre") ?: ""
         val autoModelo = intent.getStringExtra("auto_modelo") ?: ""
 
+        // IMPORTANTE: Aplicar fondo ANTES de configurar todo lo demás
+        updateBackground()
+
         setupActionBar(escuderiaNombre, autoModelo)
         setupFragment(escuderiaId)
+        updateAllTextColors()
         setupAnimations()
+    }
+
+    /**
+     * Actualiza el fondo según el tema actual - usando colores sólidos
+     */
+    private fun updateBackground() {
+        val isDarkMode = ThemeUtils.isDarkMode(this)
+
+        if (isDarkMode) {
+            // Modo oscuro - color #253342
+            binding.rootLayout.setBackgroundColor(
+                ContextCompat.getColor(this, R.color.drivers_bg_start)
+            )
+        } else {
+            // Modo claro - color #E8F4F8
+            binding.rootLayout.setBackgroundColor(
+                ContextCompat.getColor(this, R.color.drivers_bg_start_light)
+            )
+        }
+
+        println("🎨 Fondo DriversActivity: ${if (isDarkMode) "OSCURO (#253342)" else "CLARO (#E8F4F8)"}")
+    }
+
+    /**
+     * Actualiza todos los colores de texto
+     */
+    private fun updateAllTextColors() {
+        ColorUtils.updateAllTextViews(binding.rootLayout, this)
+        println("📝 Colores de texto actualizados")
     }
 
     /**
@@ -59,8 +99,7 @@ class DriversActivity : AppCompatActivity() {
      * Configura animaciones de entrada
      */
     private fun setupAnimations() {
-        // Animación de zoom in desde el centro
-        AnimationUtils.zoomIn(binding.root, 600)
+        AnimationUtils.zoomIn(binding.rootLayout, 600)
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -70,7 +109,6 @@ class DriversActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        // Transición de salida con fade
         overridePendingTransition(
             android.R.anim.fade_in,
             android.R.anim.fade_out
