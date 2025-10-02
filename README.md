@@ -121,7 +121,7 @@ DriversActivity (Pilotos de la escudería)
 
 ## Evidencias
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/1a01818b-8281-4c3e-ac79-8542853d94e7" />
-<img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/5c9c81fa-eb3f-401b-9f82-5360089d9575" />
+<img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/ed0ed35f-8216-4e90-84fd-d210242893f8" />
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/b451114d-3be4-4e53-9cf0-a55a3b88b667" />
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/2df16fb2-0bf8-493b-a86e-dc9512bc6054" />
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/fdccf510-dacc-4fd9-ba27-d7e9f7bed82e" />
