@@ -120,7 +120,7 @@ DriversActivity (Pilotos de la escudería)
 **Solución**: Se agregó un sistema de mensajes simples en la consola con símbolos y emojis, lo que facilitó detectar en qué parte del proceso ocurrían los problemas.
 
 ## Evidencias
-<img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/470a6eb0-8264-4fd5-a2b1-86dbd4eb2560" />
+<img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/1a01818b-8281-4c3e-ac79-8542853d94e7" />
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/5c9c81fa-eb3f-401b-9f82-5360089d9575" />
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/b451114d-3be4-4e53-9cf0-a55a3b88b667" />
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/2df16fb2-0bf8-493b-a86e-dc9512bc6054" />
@@ -145,7 +145,9 @@ DriversActivity (Pilotos de la escudería)
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/fdbc23b3-c070-49bf-a5dc-8ab368d9a483" />
 <img width="320" height="800" alt="image" src="https://github.com/user-attachments/assets/aa6b2206-8f9c-4ade-a03e-16d83693f478" />
 
+https://github.com/user-attachments/assets/99347319-3334-4c6c-921d-4aaf45c2fc0f
 
-https://github.com/user-attachments/assets/e088f902-e443-4e8b-8003-46de8e8f8235
+
+
 
 
